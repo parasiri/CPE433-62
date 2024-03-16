@@ -54,7 +54,6 @@ namespace DNWS
             string pm25 = JsonSerializer.Serialize(pm25reading);
             response.body = Encoding.UTF8.GetBytes(pm25);
             response.type = "application/json";
-    
             return response;
         }
 
