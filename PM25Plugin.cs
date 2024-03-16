@@ -49,7 +49,6 @@ namespace DNWS
                     RequestAqiCn();
                 }
             }
-
             HTTPResponse response = new HTTPResponse(200);
             string pm25 = JsonSerializer.Serialize(pm25reading);
             response.body = Encoding.UTF8.GetBytes(pm25);
